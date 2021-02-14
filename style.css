@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.CellContainer {
+  background: #6e6e5f;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.Cell {
+  width: 200px;
+  height: 200px;
+  background: #1f1f1f;
+}
+
+.\\2x2 {
+  width: 400px;
+  height: 400px;
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+}
